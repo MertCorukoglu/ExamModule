@@ -5,5 +5,6 @@ const QuestionController = require("../controllers/question")
 
 Router.post("/create",QuestionController.create);
 
-module.exports = Router;
-checkedQuestion 
+Router.get("/getQuestions",QuestionController.getQuestion)
+
+module.exports = Router; 
