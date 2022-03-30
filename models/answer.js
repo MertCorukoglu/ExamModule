@@ -9,7 +9,6 @@ const Answer = new Schema ({
     Option_id: String,
     Question_id: String,
     PassingTime: Number,
-
     
 });
 
