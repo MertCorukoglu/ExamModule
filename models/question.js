@@ -13,8 +13,6 @@ const Question = new Schema ({
     Options: {
         type: [{
             id:ObjectId,
-            // id: {type:ObjectId,
-            // default: uuidv4()},
             Content: String,
             isCorrect: Boolean
         }],
