@@ -10,6 +10,14 @@ QuestionValidator.validateCreate,
 QuestionValidator.validateCreateStatus,
 QuestionController.create,);
 
-Router.get("/getQuestions",QuestionController.getQuestion)
+Router.get("/getAllQuestions",QuestionController.getAllQuestion)
 
-module.exports = Router; 
+Router.post("/update",
+QuestionValidator.validateUpdate,
+QuestionValidator.validateUpdateStatus,
+QuestionController.update
+)
+
+Router.get("/getQuestion/:id",QuestionController.getQuestion)
+
+module.exports = Router;

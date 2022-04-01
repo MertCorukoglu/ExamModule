@@ -10,6 +10,7 @@ const Question = new Schema ({
     Content: String,
     QuestionNo: Number,
     QuestionType: Number,
+    QuestionPoint: Number,
     Options: {
         type: [{
             id:ObjectId,
